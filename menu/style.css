@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+}
+
+.name {
+    height: 90vh;
+    margin: 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+}
+
+.name .rainbowText {
+    font-size: 8vw;
+}
+
+.grid {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%
+}
+
+.grid .swiper {
+    height: 600px;
+    width: 300px;
+}

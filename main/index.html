@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Bubble sus</title>
+</head>
+<body id="app" v-scroll="onScroll">
+  <div class="wrapper">
+    <header>
+      <div class="pre-head">
+        <!--text-->
+      </div>
+      <div class="head-blocks">
+        <a href="index.html" class="head_block 1">
+          <span>
+            Home
+          </span>
+        </a>
+        <a href="../menu/menu.html" class="head_block 2">
+          <span>
+            Menu
+          </span>
+        </a>
+        <div class="head_block 3"
+          @click="changeRegForm('block')">
+          <span>
+            Get started
+          </span>
+        </div>
+        <a class="head_block 4">
+          <span>
+            Contact us
+          </span>
+        </a>
+        <a class="head_block 5">
+          <span>
+            Help
+          </span>
+        </a>
+        <a class="head_block 6">
+          <span>
+            Why lutchiisaettop?
+          </span>
+        </a>
+      </div>
+    </header>
+  
+    <main>
+      <img src="leon.jpg" alt="leon" class="leon">
+      <img src="shelly.jpg" alt="shelly" class="shelly">
+      <span class="main-text">
+        Это Шелли, а это Леон, я хайповый, а ты клон))))))))
+      </span>
+    </main>
+  
+    <div class="regWindow"
+         :style="{ display: regform}">
+      <div class="registration-form">
+        <button class="close" @click="changeRegForm('none')">x</button>
+        <div class="wrapper">
+          <span> Just write your tag from Brawl Stars! </span>
+          <input type="text">
+          <button class="submit" @click="changeRegForm('none')"> submit </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="app.js"></script>
+  <!-- <script src="fetch.js"></script> -->
+</body>
+</html>

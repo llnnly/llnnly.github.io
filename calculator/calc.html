@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="app">
+        <div class="calculator">
+            <section class="output-line">
+                <input type="text" v-model="result" placeholder="0">
+            </section>
+            <section class="keyboard">
+                <div class="methods">
+                    <button @click="toEqualize()"class="equal">=</button>
+                    <button @click="backspace()" class="backspace"><img src="backspace.png" alt="<-"></button>
+                    <button @click="reset()" class="reset">C</button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                <div class="main-board">
+                    <div class="number-keys">
+                        <button @click="input(num)" class="numbers" v-for="num in numbers">{{num}}</button>
+                    </div>
+                    <div class="operation-keys">
+                        <button @click="input(op)" class="operations" v-for="op in operations">{{op}}</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>

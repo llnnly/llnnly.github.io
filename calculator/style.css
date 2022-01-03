@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.calculator {
+    height: 90vh;
+    width: 80vw;
+    background-color: #c0c0c0;
+}
+
+.calculator .output-line {
+    height: 27vh;
+    width: 100%;
+}
+
+.calculator .output-line input {
+    height: 27vh;
+    width: 100%;
+    color: black;
+    text-align: right;
+    font-size: 10vh;
+}
+
+/* placeholders styles */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:black;
+}
+
+.calculator .keyboard {
+    height: 63vh;
+    width: 100%;
+}
+
+.calculator .keyboard .methods {
+    height: 21vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.calculator .keyboard .methods button {
+    flex: 25%;
+    font-size: 4vh;
+    background-color: blue;
+}
+
+.calculator .keyboard .methods .backspace img {
+    height: 4vh;
+}
+
+.calculator .keyboard .main-board {
+    height: 42vh;
+    width: 100%;
+    display: flex;
+}
+
+.calculator .keyboard .main-board .number-keys {
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.calculator .keyboard .main-board .number-keys .numbers {
+    font-size: 4vh;
+    flex: 33%;
+    background-color: red;
+}
+
+.calculator .keyboard .main-board .operation-keys {
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.calculator .keyboard .main-board .operation-keys .operations {
+    font-size: 4vh;
+    flex: 100%;
+    background-color: red;
+}
