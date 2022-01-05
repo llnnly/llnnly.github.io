@@ -1,0 +1,117 @@
+body{
+    font-family: 'Rampart One', cursive;
+    text-decoration: none;
+    background-color: antiquewhite;
+}
+.s1{
+    background-color: coral;
+    padding: 16px;
+    border-radius: 10px;
+    border: 5px double white;
+    transition: all 0.5s ease-in;
+    text-decoration: none;
+}
+.s1:hover{
+    background-color:cyan;
+    text-decoration: underline;
+}
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+}
+.header .img {
+    position: absolute;
+    right: calc(10px + 20vw);
+    top: 16px;
+    height: 70px;
+    width: 70px;
+    background-image: url(menu.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.menu-toggle {
+    position: fixed;
+    top: 0;
+    right: -20vw;
+    width: 20vw;
+    height: 100vh;
+}
+.menu {
+    width: 20vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.9;
+}
+
+/* start animation */
+.start-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618489733_29-p-fon-bravo-stars-dlya-shapki-30.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+    animation: start-logo 8s;
+    -webkit-animation-fill-mode: forwards;
+}
+.start-logo h1 {
+    font-size: 4em;
+    opacity: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    animation: start-logo-text 5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes start-logo-text {
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes start-logo {
+    62.5% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        z-index: 1000;
+    }
+    100% {
+        opacity: 0;
+        z-index: -999;
+    }
+}
+
+/* dinamic styles */
+.menuToRight {
+    transition: all .5s;
+    right: 0;
+}
+.menuToLeft {
+    transition: all .5s;
+    right: -20vw;
+}
+.rotate360 {
+    transition: transform .5s;
+    transform: rotate(360deg);
+}
+.rotate-360 {
+    transition: transform .5s;
+    transform: rotate(-360deg);
+}
+@media (max-width: 700px) {
+    .start-logo h1 {
+        font-size: 3em;
+    }
+}

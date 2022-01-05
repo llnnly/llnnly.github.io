@@ -1,0 +1,15 @@
+.s1{
+    background-color: coral;
+    padding: 16px;
+    border-radius: 10px;
+    border: 5px double white;
+    transition: all 0.5s ease-in;
+    text-decoration: none;
+}
+.s1:hover{
+    background-color:cyan;
+    text-decoration: underline;
+}
+
+
+

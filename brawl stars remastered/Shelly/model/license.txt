@@ -1,0 +1,11 @@
+Model Information:
+* title:	Shelly (Brawl Stars)
+* source:	https://sketchfab.com/3d-models/shelly-brawl-stars-67f14b4231704a00bdc2d6cbc6ad84d1
+* author:	ivan.vladimirov08 (https://sketchfab.com/ivan.vladimirov08)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Shelly (Brawl Stars)" (https://sketchfab.com/3d-models/shelly-brawl-stars-67f14b4231704a00bdc2d6cbc6ad84d1) by ivan.vladimirov08 (https://sketchfab.com/ivan.vladimirov08) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

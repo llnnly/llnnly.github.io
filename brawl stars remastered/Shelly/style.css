@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aquamarine;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618489733_29-p-fon-bravo-stars-dlya-shapki-30.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rampart One', cursive;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+.landing {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+.landing main {
+    width: 70vw;
+    height: 100vh;
+}
+.landing main .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    font-size: 10em;
+    background: -webkit-linear-gradient(158deg, rgba(76,0,255,1) 0%, rgba(255,0,249,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5vh;
+}
+.landing main .description {
+    height: 40vh;
+    font-size: 3em;
+    padding: 5vw;
+}
+.landing aside {
+    width: 30vw;
+    height: 100vh;
+}
+.info {
+    height: 100vh;
+}
+.info h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    font-size: 5em;
+}
+.info .swiper {
+    height: 40vh;
+    background-color: #DAEDF9;
+    margin: 20vh 20px 0 20px;
+}
+.info .swiper .swiper-container {
+    height: 100%;
+}
+.info .swiper .swiper-container .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.info .swiper .swiper-container .swiper-slide h1 {
+    width: 100vw;
+    height: 7vh;
+    font-size: 3em;
+}
+.info .swiper .swiper-container .swiper-slide .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 20vh;
+    margin: 5vh 0;
+}
+.info .swiper .swiper-container .swiper-slide .super {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    height: 20vh;
+    margin: 5vh 0;
+    font-size: 5em;
+    background: -webkit-linear-gradient(143deg, rgba(255,175,0,1) 0%, rgba(255,0,249,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
