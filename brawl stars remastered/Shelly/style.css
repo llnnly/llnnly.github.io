@@ -156,6 +156,9 @@ footer a {
     }
 }
 @media (max-width: 550px) {
+    .landing main .title {
+        font-size: 5em;
+    }
     .info h1 {
         font-size: 2em;
     }
