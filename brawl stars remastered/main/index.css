@@ -102,16 +102,52 @@ body{
     transition: all .5s;
     right: -20vw;
 }
+.menuHidden {
+    position: absolute;
+    transition: all .5s;
+    background-color: white;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.menuShowed {
+    position: absolute;
+    transition: all .5s;
+    background-color: white;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    right: 20vw;
+    opacity: 0.9;
+}
 .rotate360 {
     transition: transform .5s;
     transform: rotate(360deg);
+    z-index: 101;
 }
 .rotate-360 {
     transition: transform .5s;
     transform: rotate(-360deg);
+    z-index: 101;
 }
 @media (max-width: 700px) {
     .start-logo h1 {
         font-size: 3em;
+    }
+    .long-btn {
+        padding: 1px;
+        font-size: 14px;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts a {
+        margin-bottom: 5px;
+    }
+    .for-large-screens {
+        display: none;
     }
 }

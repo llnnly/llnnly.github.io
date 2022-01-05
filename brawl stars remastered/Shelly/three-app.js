@@ -12,13 +12,16 @@ function rotateObject(object, degreeX=0, degreeY=0, degreeZ=0) {
 });
 
 // initialize scene
-width = 30
+width = window.innerWidth > 800 ? 30 : 100
 height = 100
+
 const scene = new THREE.Scene()
 const camera = new THREE.PerspectiveCamera(75, ((window.innerWidth/height)*width) / window.innerHeight, 0.1, 1000)
 const renderer = new THREE.WebGLRenderer( { alpha: true } );
+
+
 body = document.querySelector('.landing')
-container = document.querySelector('.landing aside')
+container = document.querySelector('.landing .aside')
 body.appendChild(container)
 renderer.setSize((window.innerWidth/height)*width, window.innerHeight)
 container.appendChild( renderer.domElement );

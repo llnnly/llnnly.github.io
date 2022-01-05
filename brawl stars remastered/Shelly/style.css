@@ -10,6 +10,7 @@ body {
     font-family: 'Rampart One', cursive;
     text-decoration: none;
     overflow-x: hidden;
+    position: relative;
 }
 .landing {
     display: flex;
@@ -38,7 +39,7 @@ body {
     font-size: 3em;
     padding: 5vw;
 }
-.landing aside {
+.landing .aside {
     width: 30vw;
     height: 100vh;
 }
@@ -50,10 +51,11 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 10vh;
+    min-height: 10vh;
     font-size: 5em;
 }
 .info .swiper {
+    width: calc(100vw - 40px);
     height: 40vh;
     background-color: #DAEDF9;
     margin: 20vh 20px 0 20px;
@@ -94,4 +96,73 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    padding: 5px 20px;
+    bottom: 0;
+
+    background: rgb(0,255,34);
+    background: -moz-linear-gradient(135deg, rgba(0,255,34,1) 0%, rgba(0,241,255,1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(0,255,34,1) 0%, rgba(0,241,255,1) 100%);
+    background: linear-gradient(135deg, rgba(0,255,34,1) 0%, rgba(0,241,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff22",endColorstr="#00f1ff",GradientType=1);
+}
+footer a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+@media (max-width: 900px) {
+    .landing main .title {
+        font-size: 7em;
+    }
+    .landing main .description {
+        font-size: 2em;
+    }
+    .info h1 {
+        font-size: 3em;
+    }
+    .info .swiper .swiper-container .swiper-slide .super {
+        font-size: 3em;
+    }
+}
+@media (max-width: 800px) {
+    .landing .aside {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        padding: 10vw 0;
+    }
+    .landing main {
+        width: 100vw;
+        z-index: 100;
+    }
+    .landing .bg-blur {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(180deg, rgba(255,255,255,0.6026785714285714) 0%, rgba(255,255,255,0.5) 44%, rgba(255,255,255,0.4) 84%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(255,255,255,0.6026785714285714) 0%, rgba(255,255,255,0.5) 44%, rgba(255,255,255,0.4) 84%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,0.6026785714285714) 0%, rgba(255,255,255,0.5) 44%, rgba(255,255,255,0.4) 84%, rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+}
+@media (max-width: 550px) {
+    .info h1 {
+        font-size: 2em;
+    }
+    .info .swiper .swiper-container .swiper-slide h1 {
+        font-size: 2em;
+    }
+    .info .swiper .swiper-container .swiper-slide .super {
+        font-size: 2em;
+    }
 }

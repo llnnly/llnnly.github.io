@@ -9,15 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="fonweb.css">
     <link rel="stylesheet" href="front.css">
     <script src= "http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 </head>
 <body>
-        <div class="start-logo">
+        <!-- <div class="start-logo">
             <h1>Bebra stars</h1>
-        </div>
+        </div> -->
         <div class="header">
             <h1>Hello Gay</h1>
             <div class="menu-toggle"
@@ -25,7 +24,8 @@
                 <div class="img" 
                      v-on:click="toggleMenu"
                      v-bind:class="btnMenuClass"></div>
-                <div class="menu">
+                <div class="menu"
+                     v-bind:class="onlyMenuClass">
                     <div class="menu-content">
                         <ul>
                             <li>
@@ -78,7 +78,7 @@
         <h1>Мои спонсоры</h1>
         <a href="https://github.com/llnnly" class="s1">llnnly</a>
         <h1>Переходи по ссылке и забирай бесплатные 2500 геев</h1>
-        <a href="https://llnnly.github.io/mcqween/mashina.html" class="s1">Переходи быстрей пока не кончились</a>
+        <a href="https://llnnly.github.io/mcqween/mashina.html" class="s1 long-btn">Переходи быстрей пока не кончились</a>
         <h2>Узнай свое ник в игре Bebra Stars</h2>
         <form>
             <label for="">Номер карты</label>
@@ -99,10 +99,10 @@
             <input style="background: coral;" type="submit" value="Отправить данные">
         </form>
         <hr size="9px" color="red">
-        <div align="center">
+        <div align="center" class="contacts">
             <h1>Контактная информация</h1>
-            <a href="gggg" class="s1">Instagram</a>|
-            <a href="hhhh" class="s1">Telegram</a>|
+            <a href="gggg" class="s1">Instagram</a><span class="for-large-screens">|</span>
+            <a href="hhhh" class="s1">Telegram</a><span class="for-large-screens">|</span>
             <a href="nnnn" class="s1">Github</a>
         </div>
         <!-- <script src="script.js"></script> -->
