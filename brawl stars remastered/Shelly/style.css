@@ -169,3 +169,17 @@ footer a {
         font-size: 2em;
     }
 }
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10vw;
+    height: 5vw;
+    background-color: green;
+    font-size: 0.7em;
+    top: 0;
+    right: 0;
+    position: fixed;
+    color: white;
+    font-family: sans-serif;
+}
