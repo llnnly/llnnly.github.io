@@ -1,18 +1,18 @@
-function moneyCount() {
-    alert('Внимание, вы зашли на страницу с Шелли. Пока она позирует для вас, каждую секунду ваш долг перед создателями сайта увеличивается на 1.37 рубля. После закрытия страницы средства спишутся с вашей карты. Если вы не имеете таких денег, просим, чтобы вы покинули страницу.')
+// function moneyCount() {
+//     alert('Внимание, вы зашли на страницу с Шелли. Пока она позирует для вас, каждую секунду ваш долг перед создателями сайта увеличивается на 1.37 рубля. После закрытия страницы средства спишутся с вашей карты. Если вы не имеете таких денег, просим, чтобы вы покинули страницу.')
     
-    let money = 0
-    let isCounting = false
+//     let money = 0
+//     let isCounting = false
 
-    setInterval(() => {
-        if (window.scrollY !== window.innerHeight) {
-            money = parseFloat((1.37 + money).toFixed(2))
-            $('.count').text('Вы должны ' + money)
-        }
-    }, 1000)
+//     setInterval(() => {
+//         if (window.scrollY !== window.innerHeight) {
+//             money = parseFloat((1.37 + money).toFixed(2))
+//             $('.count').text('Вы должны ' + money)
+//         }
+//     }, 1000)
     
     
-}
+// }
 
 
 $(document).ready(function() {
@@ -33,5 +33,5 @@ $(document).ready(function() {
         }
         
     })
-    moneyCount()
+    // moneyCount()
 });

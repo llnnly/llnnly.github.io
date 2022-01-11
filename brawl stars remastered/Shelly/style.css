@@ -169,7 +169,7 @@ footer a {
         font-size: 2em;
     }
 }
-.count {
+/* .count {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,4 +182,4 @@ footer a {
     position: fixed;
     color: white;
     font-family: sans-serif;
-}
+} */
